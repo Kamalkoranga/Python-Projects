@@ -74,17 +74,64 @@
   #  print('You are not a male butyou\re tall')
 #else :
   #  print('You are  not  a male and not  tall')
-  
-num1 = float(input("Enter 1st number: "))
-num2 = float(input("Enter 2nd number: "))
-operator = input("Choose: \n (+) \n (-) \n (/) \n (*)")
-if operator == '+':
-    print(num1 + num2)
-elif operator == '-':
-    print (num1 - num2)
-elif operator == '/':
-    print(num1 / num2)
-elif operator == '*':
-    print(num1 * num2)
-else:
-    print("You had choosen anything else!")
+
+#-------------------if statement comparision
+
+#def max_number(num1, num2, num3):
+#   if num1 >= num2 and num1 >= num3 :
+#    return num1
+#  elif num2 >= num3 and num2 >= num1:
+#    return num2
+#  else:
+#    return num3
+
+#print(max_number(3, 4, 5))
+
+
+#-------------------Advanced calculator
+
+#num1 = float(input("Enter 1st number: "))
+#num2 = float(input("Enter 2nd number: "))
+#operator = input("Choose: \n (+) \n (-) \n (/) \n (*)")
+#if operator == '+':
+ #   print(num1 + num2)
+#elif operator == '-':
+#    print (num1 - num2)
+#elif operator == '/':
+ #   print(num1 / num2)
+#elif operator == '*':
+#    print(num1 * num2)
+#else:
+ #   print("You had choosen anything else!")
+
+ #-----------Dictonaries
+
+#data = {
+#  "Kamal Singh" : "Mahesh Koranga, Asha Koranga, Jawhar Nagar", 
+#  "Rahul" : "Kamala,  Harish"
+#}
+
+#print(data['Kamal Singh'])
+#print(data['Rahul'])
+
+#----------------While loop(guessing game)
+
+secret_word = 'kamal'
+limit = 0
+guess =''
+while limit < 3 and guess != secret_word:
+  guess = input('Guess the word: ')
+  if guess == secret_word :
+    print("You got it")
+  else :
+    limit += 1
+    if limit == 3 :
+      print('You loose it')
+    else :
+      print('Try Again')
+    
+
+if guess != secret_word :
+  print('You loose the game!')
+else :
+  print('You win the game!')
