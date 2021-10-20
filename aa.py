@@ -22,7 +22,7 @@ else :
     print('>>>Incorrect')
 
 # Question 4
-q4 = raw_input('Q4:- Where is the headquater of Google situated?' )
+q4 = input('Q4:- Where is the headquater of Google situated?' )
 if (q4) == 'California' :
     print('>>>Correct')
 else :
